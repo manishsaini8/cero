@@ -1,0 +1,22 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="webkul" translate="label" sortOrder="10">
+            <label>Webkul</label>
+        </tab>
+        <section id="Import" translate="label" type="text" sortOrder="305" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Demo Management</label>
+            <tab>webkul</tab>
+            <resource>Webkul_Hello::Hello_config</resource>
+            <group id="showbutton" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                <field id="listbutton" translate="label" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <frontend_model>Webkul\Hello\Block\System\Config\Form\Button</frontend_model>
+                </field>
+				<field id="image" translate="label" type="image" sortOrder="20" showInDefault="1" showInWebsite="1">
+      <label>Upload Image</label>
+      <backend_model>Webkul\Hello\Model\Config\Backend\Image</backend_model>
+      <base_url type="media">extensionname/foldername/</base_url>
+</field>
+            </group>
+        </section>
+    </system>
+</config>

@@ -1,0 +1,38 @@
+  Select Master File to upload:
+  <input type="file" name="fileToUpload" id="fileToUpload">
+  <button value="Upload Image" id="button_file"></button>
+
+<script type="text/javascript">
+    require(["jquery"],function($) {
+        $(document).ready(function() {
+			$("#button_file").onclick(function() {
+				
+			 });	
+			
+			
+			
+         /* $("#fileToUpload").change(function() {
+    var fd = new FormData();
+    fd.append('file', this.files[0]); // since this is your file input
+
+    $.ajax({
+        url: "<?php echo $this->getUrl().'hello/employee/index'?>,
+        type: "post",
+        dataType: 'json',
+        processData: false, // important
+        contentType: false, // important
+        data: fd,
+        success: function(text) {
+            alert(text);
+            if(text == "success") {
+                alert("Your image was uploaded successfully");
+            }
+        },
+        error: function() {
+            alert("An error occured, please try again.");         
+        }
+    });
+});*/
+        });
+    });
+</script>
